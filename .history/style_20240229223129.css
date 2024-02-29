@@ -67,8 +67,6 @@ body {
     justify-content: space-around;
     align-items: center;
     background: red;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
 }
 
 .text-container {
@@ -78,18 +76,11 @@ body {
     align-items: start;
     color: white;
     font-family: sans-serif;
+    
 
-    background: hsla(0, 0%, 0%, 0.4);
-
-    p {
-        font-size: 1rem;
+    h3 {
+        font-size: 1.5rem;
         margin: 0;
         padding: 8px;
-        line-height: 1.5rem;
-    }
-
-    .highlight {
-        font-weight: bold;
-        font-style: italic;
     }
 }

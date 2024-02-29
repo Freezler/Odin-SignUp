@@ -1,0 +1,31 @@
+.container {
+    background-color: rgb(227, 233, 247);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    pafdding
+    padding: 0;
+}
+
+.section-left {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0, 0%, 100%, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.section-right {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

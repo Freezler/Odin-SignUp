@@ -1,0 +1,46 @@
+@font-face {
+    font-family: No;
+    src: url(sansation_light.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(12, 13, 10);
+}
+
+.container {
+    background-color: rgb(76, 98, 148);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.section-left {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://unsplash.it/1450/1450?woods');
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+
+.section-right {
+    width: 760px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red;
+}

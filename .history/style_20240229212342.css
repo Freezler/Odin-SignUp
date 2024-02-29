@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(227, 233, 247);
+    display: grid;
+    place-items: center;
+    grid-column: 2;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,9 @@
+container {
+    background-color: rgb(227, 233, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}

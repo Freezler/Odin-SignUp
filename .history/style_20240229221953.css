@@ -10,7 +10,6 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgb(12, 13, 10);
-    min-height: 80vh;
 }
 
 .container {
@@ -25,7 +24,7 @@ body {
 }
 
 .section-left {
-    width: 492px;
+    width: 500px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -64,32 +63,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: red;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    color: white;
-    font-family: sans-serif;
-
-    background: hsla(0, 0%, 0%, 0.4);
-
-    p {
-        font-size: 1rem;
-        margin: 0;
-        padding: 8px;
-        line-height: 1.5rem;
-    }
-
-    .highlight {
-        font-weight: bold;
-        font-style: italic;
-    }
 }
