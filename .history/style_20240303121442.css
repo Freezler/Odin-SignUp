@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    font-size: 16px;
+    margin: inherit;
+    padding: inherit;
+    line-height: 1.6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.99);
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 535px 905px;
+    grid-auto-rows: auto;
+    width: 100vw;
+    height: 100%;
+    : 2px solid red;
+    margin: 0 2rem;
+
+    @media screen and (max-width: 620px) {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: self-start;
+    font-family: Norse-Bold;
+    font-size: 3.4rem;
+    height: 180px;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.credit {
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+    width: 100%;
+    color: aliceblue;
+    font-size: 0.8rem;
+}
+
+.section-left {
+    color: ghostwhite;
+    font-weight: 200;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-right {
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: space-evenly;
+    align-items: center;
+    margin: 0 3rem;
+    background: hsla(0, 0%, 100%, 0.95);
+
+    .text-container {
+        display: grid;
+        grid-template-rows: 1fr;
+        align-items: center;
+
+        .topParagraph {
+            font-size: 1.2rem;
+            text-wrap: pretty;
+            padding: 0;
+            width: 45ch;
+        }
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        .poop {
+
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+            font-size: inherit;
+
+            justify-content: center;
+        }
+    }
+}

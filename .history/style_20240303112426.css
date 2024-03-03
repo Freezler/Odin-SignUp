@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    font-size: 16px;
+    margin: inherit;
+    padding: inherit;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(178, 177, 180, 0.433);
+
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 372px 1fr;
+    grid-auto-rows: auto;
+    width: 100vw;
+    height: 100%;
+    border: 2px solid red;
+    margin: 2rem;
+
+    @media screen and (max-width: 620px) {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: self-start;
+    border: 2px solid red;
+    font-family: Norse-Bold;
+    font-size: 3.4rem;
+    height: 200px;
+    width: 100%;
+    margin-top: 72px;
+}
+
+.credit {
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    border: 2px solid red;
+    height: 100px;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,p {
+            text-decoration: underline;
+        }
+    }
+}
+
+.section-left {
+    border: 2px solid red;
+    color: ghostwhite;
+    font-weight: 200;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-right {
+    border: 2px solid red;
+    display: grid;
+    grid: subgrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,258 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: inherit;
+    padding: inherit;
+    width: 100vw;
+    max-height: 100vh;
+    background: rgba(0, 0, 0, 0.99);
+
+}
+
+.strong {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+main.container {
+    display: grid;
+    grid-template-columns: 536px 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-height: 100vh;
+    width: 88vw;
+
+    height: 100%;
+
+    @media screen and (max-width: 720px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+
+        .section-left {
+            max-height: 40vh;
+        }
+
+        .form-container {
+            display: grid;
+            grid-column: span 1;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            margin-top: 64px;
+            margin-left: 48px;
+
+        }
+
+        .section-right,
+        .section-left {
+            max-height: 100vh;
+
+
+        }
+
+    }
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+    align-items: center;
+    font-family: Norse-Bold;
+    font-size: 6rem;
+    font-weight: 200;
+    height: 130px;
+    width: 100%;
+    background: hsla(208, 100%, 0%, 0.483);
+    margin-top: 10rem;
+
+    h1 {
+        padding-top: 1.5rem;
+        color: hsla(0, 0%, 99%, 0.99);
+    }
+}
+
+.credit {
+    border: 2px solid hsla(0, 94%, 50%, 0.99);
+
+
+    font-size: 0.6rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    color: aliceblue;
+
+
+
+
+    a {
+        text-decoration: underline;
+        color: hsla(208, 100%, 97%, 0.883);
+        font-size: 6px;
+        transition: all 0.3s linear;
+        letter-spacing: 0.5px;
+        font-weight: 200;
+    }
+
+    a:hover {
+        color: rgb(240, 244, 31);
+        font-size: 13px;
+        transition: all 0.6s linear;
+        letter-spacing: 1.2px;
+        font-weight: 700;
+    }
+}
+
+
+.section-left {
+    max-height: 100vh;
+    font-weight: 200;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: space-between;
+    align-items: center;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0;
+}
+
+.section-right {
+    max-height: 100vh;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    background: hsla(0, 0%, 100%, 0.905);
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 48px;
+        padding-top: 96px;
+
+
+
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.6rem;
+            
+            max-width: 45ch;
+            line-height: 1.3;
+        }
+
+        .highlight {
+            font-weight: 500;
+            font-size: 1.8rem;
+        }
+    }
+
+    .completeWidth {
+        box-sizing: border-box;
+        background: hsl(0, 100%, 100%);
+
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .form-container {
+        border: none;
+        display: grid;
+        padding: 24px 0;
+        margin-bottom: 2rem;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        margin-top: 64px;
+        margin-left: 48px;
+
+
+        label {
+            font-size: xx-small;
+            margin-bottom: 0.1rem;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            background: transparent;
+            text-transform: capitalize;
+            font-size: xx-small;
+
+        }
+
+        .poop {
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+            justify-self: self-start;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+    padding-top: 0px;
+
+
+
+    button {
+        background: #305436;
+        color: hsla(0, 0%, 100%, 0.99);
+        border-radius: 8px;
+        padding: 12px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: xx-small;
+        letter-spacing: 0.5px;
+        transition: all 0.3s linear;
+        margin-bottom: 32px;
+
+
+        button:hover {
+            border: none;
+        }
+    }
+}

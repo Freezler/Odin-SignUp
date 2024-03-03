@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.99);
+    transition: all 0.7s ease-in-out;
+}
+
+main.container {
+    display: grid;
+    grid-template-columns: 524px 2fr;
+    grid-auto-rows: auto;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+
+    .form-wrapper {
+        
+        background: hsla(0, 0%, 100%, 0.95);
+        margin: 0 2rem;
+        box-shadow: 0px 2px 15px -6px rgba(0, 0, 0, 0.5);
+    }
+
+
+    @media screen and (max-width: 620px) {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-family: Norse-Bold;
+    font-size: 3.5rem;
+    font-weight: 200;
+    height: 130px;
+    width: 100%;
+    background: hsla(208, 100%, 0%, 0.483);
+    margin: 0;
+    
+
+    h1 {
+        padding-top: 1rem;
+        color: hsla(0, 0%, 99%, 0.99);
+    }
+
+}
+
+.credit {
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    margin: 0;
+
+    small {
+        margin-bottom: 16px;
+        font-size: clamp(6px, 1.5vw, 12px);
+    }
+
+    a {
+        text-decoration: underline;
+        color: hsla(208, 100%, 97%, 0.483);
+    }
+
+    & a:hover {
+        color: rgb(222, 22, 122);
+    }
+
+
+}
+
+.section-left {
+    
+    font-weight: 200;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: end;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0;
+}
+
+.section-right {
+    display: grid;
+    max-width: 640px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); ;
+    padding-left: 12px;
+    background: hsla(0, 0%, 100%, 0.895);
+
+    .text-container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        .topParagraph {
+            font-size: 1.2rem;
+            text-wrap: pretty;
+            padding: 0;
+            width: 45ch;
+
+        }
+    }
+
+   
+
+    .form-container {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr) ;
+        grid-template-columns: 1fr 1fr;
+        
+       
+        max-width: 100%;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        
+        
+
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            text-transform: uppercase;
+        }
+
+        .poop {
+            grid-column: 1 / 3;
+            grid-row: 1 / 1;
+            font-size: inherit;
+            justify-self: self-start;
+            font-size: larger;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+           
+        }
+    }
+}
