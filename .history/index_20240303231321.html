@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sign-up</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main class="container">
+		<section class="section-left">
+			<div class="logo-container">
+				<img src="odin-lined.png" width="88px" srcset="">
+				<h1>ODIN</h1>
+			</div>
+			<div class="credit">
+				<small>Photo by <a
+						href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+						target="_#blank">Halie
+						West</a> on <a
+						href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash
+					</a>
+				</small>
+			</div>
+
+		</section>
+		<section class="section-right">
+			<div class="right-wrapper">
+				<div class="text-container">
+					<p class="topParagraph">
+						This is not a real online service! you know you need something like this in your life to help
+						you
+						realize your deepest dreams.
+						<br>
+						Sign up
+						<span class="highlight">now</span>
+						to get started.
+					</p>
+					<p class="bottomParagraph">You <span class="highlight">know</span> you want to.</p>
+				</div>
+
+				<form class="completeWidth" id="myForm">
+					<fieldset class="form-container">
+						<div class="poop"><strong class="poop strong">Let's do this!</strong></div>
+						<div class="item item1"><label for="first-name">first name</label><input type="text"
+								name="first-name" required id="first-name" autocomplete="username"></div>
+						<div class="item item2">
+							<label for="last-name">last name</label><input type="text" name="last-name" id="last-name"
+								autocomplete="username" required>
+						</div>
+						<div class="item item3">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" autocomplete="email" required>
+						</div>
+						<div class="item item4">
+							<label for="phone">Phone number</label>
+							<input type="number" name="phone" id="phone" autocomplete="tel" required>
+						</div>
+						<div class="item item5">
+							<label for="password">Password</label>
+							<input type="password" name="password" pattern=".{6,}" id="password" autocomplete="new-password" required>
+						</div>
+						<div class="item item6">
+							<label for="confirm">Confirm password</label>
+							<input type="password" name="confirm" pattern=".{6,}'' id="confirm" required>
+						</div>
+
+					</fieldset>
+				</form>
+
+				<div class="cta-container">
+					<div class="cta">
+						<button type="button" class="ctaBtn" id="submitBtn">Create Account</button>
+						<div class="cta-text">
+							Already have an account?
+							<span>
+								<a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<script type="module" src="/main.js"></script>
+</body>
+
+</html>
