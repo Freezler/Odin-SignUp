@@ -45,7 +45,7 @@ main.container {
     max-height: 100vh;
     width: 88vw;
 
-    height: 100%;
+    height: 100vh;
 
     @media screen and (max-width: 720px) {
         .container {
